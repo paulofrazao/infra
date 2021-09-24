@@ -16,7 +16,7 @@ spec:
     matchLabels:
       app.kubernetes.io/name: colour-gitops
       app.kubernetes.io/component: git-ops-colour-frontend
-  replicas: 3
+  replicas: 2
   template:
     metadata:
       labels:
@@ -27,9 +27,9 @@ spec:
       - name: colour-gitops
         #image: paulofrazao/weaveworks-gitops:0.1
         #image: paulofrazao/launchpad:latest
-        #image: paulofrazao/k8s-lb-scaling:yellow
+        image: paulofrazao/k8s-lb-scaling:yellow
         #image: paulofrazao/k8s-lb-scaling:red
-        image: paulofrazao/suse-demo-yellow:0.1.0
+        #image: paulofrazao/suse-demo-yellow:0.1.0
         resources:
           requests:
             cpu: 100m
