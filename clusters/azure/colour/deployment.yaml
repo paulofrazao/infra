@@ -16,7 +16,7 @@ spec:
     matchLabels:
       app.kubernetes.io/name: colour-gitops
       app.kubernetes.io/component: git-ops-colour-frontend
-  replicas: 5
+  replicas: 3
   template:
     metadata:
       labels:
