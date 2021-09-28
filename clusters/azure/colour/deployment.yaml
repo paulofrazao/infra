@@ -72,10 +72,10 @@ metadata:
 spec:
   tls:
   - hosts:
-    - colour.weaveworks.tech
+    - colour.geshi.ca
     secretName: colour-weaveworks-tech-crt
   rules:
-  - host: colour.weaveworks.tech
+  - host: colour.geshi.ca
     http:
       paths:
       - path: /
